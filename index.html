@@ -266,6 +266,34 @@
             <div class="section">
                 <div class="section-label">
                     <span class="section-number">3</span>
+                    Файл виключення за ВП (опційно)
+                </div>
+                <div class="file-input-wrapper">
+                    <input type="file" id="file3Iban" accept=".xlsx,.xls" />
+                    <label for="file3Iban" class="file-input-label" id="label3Iban">
+                        <div class="file-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <div class="file-details">
+                            <div class="file-name">Завантажте файл ВП (необов'язково)</div>
+                            <div class="file-info">Виконавчі провадження, по яких не можна фільтрувати (.xlsx або .xls)</div>
+                        </div>
+                    </label>
+                </div>
+                <select id="file3ColumnIban" class="hidden">
+                    <option value="">Оберіть колонку з номером ВП (у цьому файлі)</option>
+                </select>
+                <select id="file1VpColumnIban" class="hidden">
+                    <option value="">Оберіть колонку з номером ВП (в основному файлі)</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <div class="section-label">
+                    <span class="section-number">4</span>
                     Статистика обробки
                 </div>
                 <div class="stats-grid">
